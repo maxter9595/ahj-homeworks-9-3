@@ -1,0 +1,71 @@
+/* === Global Styles === */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+/* === Like Button Styles === */
+.like-btn {
+  background-color: rgb(254, 0, 0);
+  color: white;
+  border: none;
+  padding: 13.5px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 26px;
+  position: relative;
+}
+
+/* === Heart Styles === */
+.heart {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url('../svg/heart.svg') no-repeat center;
+  background-size: contain;
+  opacity: 1;
+}
+
+/* === Heart Animation Keyframes === */
+@keyframes floatHeart1 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(-50px, -50px);
+  }
+  50% {
+    transform: translate(0, -100px);
+  }
+  75% {
+    transform: translate(50px, -150px);
+  }
+  100% {
+    transform: translate(0, -200px);
+    opacity: 0;
+  }
+}
+
+@keyframes floatHeart2 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(0, -50px);
+  }
+  50% {
+    transform: translate(50px, -100px);
+  }
+  75% {
+    transform: translate(-50px, -150px);
+  }
+  100% {
+    transform: translate(0, -200px);
+    opacity: 0;
+  }
+}
